@@ -693,6 +693,7 @@ private[deploy] class Master(
    * Since 12 < 16, no executors would launch [SPARK-8881].
    */
     // 如果没有指定executor的核心数 那么每个worker上只会运行一个executor 且该executor占用worker的所有核心数
+    // 注释测试
   private def scheduleExecutorsOnWorkers(
                                           app: ApplicationInfo,
                                           usableWorkers: Array[WorkerInfo],
