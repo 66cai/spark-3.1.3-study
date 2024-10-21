@@ -46,6 +46,8 @@ import org.apache.spark.storage.BlockId
  *                          it if necessary. Cached blocks can be evicted only if actual
  *                          storage memory usage exceeds this region.
  */
+
+//lxy push
 private[spark] class UnifiedMemoryManager(
     conf: SparkConf,
     val maxHeapMemory: Long,
